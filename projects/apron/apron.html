@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>It's Time To Cook - Apron Sewing</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/apron.jpg" alt="Apron">
+    <div class="overlay">
+        <p style="margin-left: 20%;margin-right: 20%;">It's Time To Cook - Apron Sewing </p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+    <p class="epithet"> This was made for a class called EDES 210: Prototyping and Fabrication. <br> EDES 210 provided basic instructions to use, but I foolishly decided to deviate from them.<p> 
+    <p class="texthead">THE COST OF FREEDOM<p> 
+    <p class="words"> In accordance with the steps provided, I selected the dimensions of my apron based on the chart provided [34'' and 24'' for the Full Apron and 1/2 waistband, respectively]. Due to the instructions saying "the first step in beginning to sew is to ... have all of the fabric cut" and the fact the next step was on the next page, I was admittedly quite lost.</p>
+    <p class="words"> But I had to get my fabric anyway. And yet, upon further inspection, my starting fabric wasn't the most rectangular; I needed some way to mark the needed cuts on it. Racking my brain, I realized I could harness the mythical powers of masking tape to form a surface that I could write on. </p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron1.jpg"alt="Using Masking Tape to Provide a Markable Surface">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: Using Masking Tape to Provide a Markable Surface</figcaption>
+    </figure>
+    <p class="words"> In forming the general rectangle, I came across a couple of issues. Firstly, given that all sides were longer than 30 inches, I needed to make perfect right angles; a small deviation will be magnified along the side. Secondly, I had to make sure the tape didn't distort the flat contour of the fabric, as that would inevitably lead to an apron with curved sides. In fixing these issues, I simply tried numerous times, swapping pen colors every couple of tries, until I was happy with the end result. Once I formed the general rectangle, I placed the cloth on my body to determine where I wanted the diagonal portion to begin. In addition, I initially followed the provided diagram, making the top side 3 inches less than the bottom. However, upon placing it on my body, I realized I wanted it to be smaller. As such, I reduced the top side by 1 inch on each side until I was satisfied with the final product.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron2.jpg"alt="The Final Configuration of Masking Tape. Pen Lines (Not Visible) Are on the Lines of Tape">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 2: The Final Configuration of Masking Tape. Pen Lines (Not Visible) Are on the Lines of Tape</figcaption>
+    </figure>
+    <p class="words"> The time had come. A few cuts later, I peeled the masking tape off. Unfortunately, a non-negligible amount of the fabric was also peeled off.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron3.jpg"alt="The Resulting Mess After Peeling Off the Tape">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 3: The Resulting Mess After Peeling Off the Tape
+        </figcaption>
+    </figure>
+    <p class="words"> Faced with this new sight, I knew I had two options: manually fix the sides via cutting or make a hem. As I thought it would lead to a better result, I chose the latter option. Using objects to hold my cloth down, I measured a 1-inch hem and waited overnight for the creases to set in.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron4.jpg"alt="Image 4: Objects in my Room Holding Down the Cloth">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 4: Objects in my Room Holding Down the Cloth
+        </figcaption>
+    </figure>
+    <p class="words">Aligning the side of the apron with the first line of the sewing machine, the hems were created.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron5.jpg"alt="Sewing the Hems">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 5: Sewing the Hems
+        </figcaption>
+    </figure>
+    <p class="texthead">THE RETURN TO NORMALCY<p> 
+    <p class="words"> Now returning back to the actual instructions, I cut my neck strap and two 36'' strips for the waist straps. I planned on trimming the waist straps if they were abnormally long, but I ended up liking the length. Aligning the outward corner of the neck strap with the intersection of the hems, I made box stitches to attach the pieces together. Regarding the waist straps, I used my body to determine where I wanted one strap to be and used a yardstick to align the other strap on the other side.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron6.jpg"alt="Aligning the Waist Straps">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 6: Aligning the Waist Straps
+        </figcaption>
+    </figure>
+    <p class="words"> With these two final box stitches, my apron was done, save for a final trimming of excess thread.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="apron7.jpg"alt="Me Wearing My Apron">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 7: Me Wearing My Apron
+        </figcaption>
+    </figure>
+
+</body>
+</html>

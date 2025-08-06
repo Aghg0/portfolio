@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>About</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+         .nameintro{
+            color:white;
+            font-family:'Space Grotesk';
+            font-size: 36px;
+            margin-top: 10%;
+        }
+
+        .intro2{
+            color:white;
+            font-family:'Space Grotesk';
+            font-size: 24px;
+        }
+
+        .icon{
+            width:60px; 
+            height:60px;
+        }
+
+        .description{
+            width:550px;
+            font-family:'Space Grotesk';
+            font-size: 16px;
+            color:white;
+            margin-left: 10px;
+        }
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="about.html">About</a></li>
+        <li class="menuitem"> <a href="index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;">
+    <div id="bd" style="height:30em;display: flex;align-items: center;justify-content:center;">
+        <section style="justify-content: center;padding-left:1%;">
+            <h2 class="nameintro">About Me </h1>
+            <h2 class="intro2">I'm a sophomore at Rice University <br> majoring in Mechanical Engineering <br>with a specialization in Mechanics/Dynamics<br> and minoring in Engineering Design. <br><br>Check out my experience below!</h2>
+        </section>
+        <img id="head" src="images/headshot.jpg" alt="An image of me" style=" width:350px; height:350px;padding-left:1%;opacity: 1;text-align: left;">
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;">
+    <div style="margin-top: 10px; display:flex;flex-direction: column;">
+        
+        <div style="display:flex; justify-content: center;margin-bottom: 20px;">
+            <img id="head" src="images/rice.png" alt="The logo of Rice University" style="width: 60px;height: 26px;">
+            <div class="description">
+                <b>August 2024 - Current <br>
+                Student at Rice University</b> <br>
+                <ul style="margin: 0;padding: 0;padding-left: 15px;">
+                    <li> Majoring in Mechanical Engineering with a specialization in Mechanics/Dynamics
+                    <li> Minoring in Engineering Design
+                    <li> Completed coursework in statics, thermodynamics, SolidWorks, MATLAB, Python, ordinary differential equations, and prototyping & fabrication 
+                    <li> GPA: 3.93 / 4.00
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+        <div style="display:flex; justify-content: center;margin-bottom: 20px;">
+            <img id="head" src="images/rice.png" alt="The logo of Rice University" style="width: 60px;height: 26px;">
+            <div class="description">
+                <b>January 2025 - Current <br>
+                Oshman Engineering Design Kitchen Lab Assistant</b> <br>
+                <ul style="margin: 0;padding: 0;padding-left: 15px;">
+                    <li> Assisted dozens of students, guiding them in equipment operation as well as offering feedback on designs and planned fabrication
+                    <li> Led FabShop workshops to teach students foundational prototyping techniques and enhance their hands-on fabrication skills
+                    <li> Operated a laser cutter, waterjet, drill press, 3D FDM printers, sandblaster, tabletop CNC machines, and a plasma cutter
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+        <div style="display:flex; justify-content: center;margin-bottom: 20px;">
+            <img id="head" src="images/rice.png" alt="The logo of Rice University" style="width: 60px;height: 26px;">
+            <div class="description">
+                <b>January 2025 - May 2028 <br>
+                Intern at Sector Microwave Industries </b> <br>
+                <ul style="margin: 0;padding: 0;padding-left: 15px;">
+                    <li> 
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+
+        <div style="display:flex; justify-content: center;margin-bottom: 20px;">
+            <img id="head" src="images/rice.png" alt="The logo of Rice University" style="width: 60px;height: 26px;">
+            <div class="description">
+                <b>January 2025 - Current <br>
+                Front Desk Worker at Hyatt Place Flushing </b> <br>
+                <ul style="margin: 0;padding: 0;padding-left: 15px;">
+                    <li> 
+                    </li>
+                </ul>
+            </div> 
+        </div>        
+
+    </div>
+</body>
+</html>

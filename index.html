@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>Kyle Li</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+        .nameintro{
+            color:white;
+            font-family:'Space Grotesk';
+            font-size: 36px;
+            margin-top: 10%;
+        }
+
+        .intro2{
+            color:white;
+            font-family:'Space Grotesk';
+            font-size: 24px;
+        }
+
+        body h3{
+            color:white;
+            font-family:'Space Grotesk';
+            margin-top: 10%;
+            font-size: 24px;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+        
+        .email a[href^="mailto:"]:link {
+            color: #5194d0;
+            text-decoration: none;
+            font-family: "Space Grotesk";
+        }
+
+        .leftmain{
+            background-color: red;
+            width:33%;
+            height: 200px;
+            text-align: center;
+            float:left;
+
+        }
+
+        .leftmain h3{
+            font-family:'Space Grotesk';
+            font-size: 18px;
+            color:#5194d0;
+        }
+
+        .about{
+            border-style:solid;
+            border-width:2px;
+            border-color:#305d85;
+            width: 33.33%; 
+            text-align: center; 
+            background-color: #0c0c13;
+        }
+
+        .about:hover {
+            background-color: #1c1c30;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+        @media screen and (max-width: 700px) {
+            #aven{
+                display: none
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            #end{
+                flex-direction: column;
+            }
+            .about{
+                width: 100%;
+            }
+        }
+
+
+    </style> 
+</head>
+
+<body>
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="about.html">About</a></li>
+        <li class="menuitem"> <a href="index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;">
+    <div id="bd" style="height:30em;display: flex;align-items: center;justify-content:center;">
+        <section style="justify-content: center;padding-left:1%;">
+            <h1 class="nameintro">Hi! I'm Kyle Li, <br> a Mechanical Engineer.</h1>
+            <h2 class="intro2">I use engineering as a medium not <br> only to bring fiction into reality, <br> but to solve real-world problems.</h2>
+            <h2 class="email"><a id = "contact2" onhover ="contacthover2()" onclick="contact2()" href="mailto:kyle81106@gmail.comsubject=Contacted%20from%20website">Feel free to reach out!</a></h2>
+        </section>
+        <img rel="preload" id="aven" src="images/1mainsitebg.png" alt="CAD model based on Aventurine's token from Honkai Star Rail" style=" width:30em; height:30em;padding-left:1%;opacity: 0.2;text-align: left;">
+    </div>
+
+
+    <div id = "end" style="display:flex;margin-top: 10px;padding: 0%;"> 
+        <div class="about" onclick="document.location='about.html'" style="cursor: pointer">
+            <p style="font-family:'Space Grotesk';font-size: 24px; align-items: flex-start; color:#5194d0;"><b>[ABOUT]</b></p>
+            <p style="font-family:'Space Grotesk';font-size: 20px; color:white;">Learn about my background and experience!</p>
+        </div>
+        <div class="about" onclick="document.location='projects.html'"  style="cursor: pointer">
+            <p style="font-family:'Space Grotesk'; font-size: 24px; align-items: flex-start; color:#5194d0;"><b>[PROJECTS]</b></p>
+            <p style="font-family:'Space Grotesk';font-size: 20px; color:white;">Explore my projects and designs!</p>
+        </div>
+        <div class="about" onclick="window.open('Kyle Li - Resume.pdf')"Download!  style="cursor: pointer">
+            <p style="font-family:'Space Grotesk'; font-size: 24px; align-items: flex-start; color:#5194d0;"><b>[RÉSUMÉ]</b></p>
+            <p style="font-family:'Space Grotesk';font-size: 20px; color:white;">Check out my résumé!</p>
+        </div>
+    </div>
+
+    
+     <script >
+        let  viewportHeight = window.innerHeight;
+        let elem2 = document.querySelector("#end");
+        let para2 = elem2.getBoundingClientRect().top;
+
+
+        if (viewportHeight > 700 && window.innerWidth > 600){
+            const end = document.getElementById("end");
+            end.style.height = (viewportHeight-para2-8)+ "px";
+        }
+
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+
+        function contact2(){
+            document.getElementById("contact2").style.color = "#1f476a";
+        }
+        function contacthover2(){
+            document.getElementById("contact2").style.color = "#3471a6";
+        }
+    </script> 
+
+    
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>About</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+         .nameintro{
+            color:white;
+            font-family:'Space Grotesk';
+            font-size: 36px;
+            margin-top: 10%;
+        }
+
+        .intro2{
+            color:white;
+            font-family:'Space Grotesk';
+            font-size: 24px;
+        }
+
+        .icon{
+            width:60px; 
+            height:60px;
+        }
+
+        .description{
+            width:550px;
+            font-family:'Space Grotesk';
+            font-size: 16px;
+            color:white;
+            margin-left: 10px;
+        }
+
+
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+        .card {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .card .main-content {
+            width: 100%;
+            height: 100%;
+        }
+        .card .main-content img {
+            width: 100%;
+            height: 100%;
+        }
+        .card .overlay-content {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); ;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+            transition: 0.6s;
+            top: 0%;
+            left: 100%;
+            font-weight: bold;
+            font-family:'Space Grotesk';
+            font-size:16px;
+        }
+        .card:hover {
+            cursor: pointer;
+        }
+        .card:hover .overlay-content {
+            transform: translateX(-100%);
+        }
+        .card .overlay-content p {
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 2rem;
+            letter-spacing: 1px;
+            line-height: 1.75rem;
+        }
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="about.html">About</a></li>
+        <li class="menuitem"> <a href="index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    
+    <div style="display: flex;flex-wrap: wrap;justify-content: center;">
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover"class="image" src="images/site.png" alt="This Website">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Becoming A CS Major  - My Personal Website
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/pokeball.png" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Catching Them All  - CAD Model of a Pokéball Based on Fanart
+            </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/yamato.png" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                This Is The Power Of Sparda - Foam Yamato From Devil May Cry V
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/miku.png" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Miku's Concert - Audio Visualizing Light-Up Acrylic Standee 
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/megazord.png" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Megazord Power Up - CAD Model Based on the Megazord's Sword 
+            </p>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/lightsaber.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                A New Hope - Combining Casting, Molding, CNCing, and 3D Printing
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/sakura.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Thousand Cherry Blossoms - CNC'ed Object
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/finger.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Counting To 12 - Molding and Casting  
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/dragon.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                100% Handmade - 3D-Printed Impossible Object 
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/210midterm.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Non Est Ad Astra Mollis E Terris Via - Wooden Mechanism 
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='projects/waterjet/waterjet.html'">
+                <img style="object-fit: cover" class="image" src="images/waterjet.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='projects/waterjet/waterjet.html'">
+            <p>
+                Full-Stopped By A Bullet - Waterjetting Metal
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='projects/lasercutbox/lasercutbox.html'">
+                <img style="object-fit: cover" class="image" src="images/lasercutbox.jpg" alt="Batman">
+            </div>
+            <div class="overlay-content"  onclick="document.location='projects/lasercutbox/lasercutbox.html'">
+            <p>
+                A New Canto - Laser Cut Box 
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='projects/crate/crate.html'">
+                <img style="object-fit: cover" class="image" src="images/woodencrate.jpg" alt="Wood Crate">
+            </div>
+            <div class="overlay-content"  onclick="document.location='projects/crate/crate.html'">
+            <p>
+                Crate Expectations - Wooden Crate
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='projects/apron/apron.html'">
+                <img style="object-fit: cover" class="image" src="images/apron.jpg" alt="Apron">
+            </div>
+            <div class="overlay-content"  onclick="document.location='projects/apron/apron.html'">
+            <p>
+                It's Time To Cook - Apron Sewing 
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/aventoken.jpg" alt="Aventurine's Token">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                All In - Aventurine's Token 
+            </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="main-content"  onclick="document.location='about.html'">
+                <img style="object-fit: cover" class="image" src="images/bioheating.png" alt="Marine Heat Have Simulator">
+            </div>
+            <div class="overlay-content"  onclick="document.location='about.html'">
+            <p>
+                Bioheating - Marine Heat Wave Simulator 
+            </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

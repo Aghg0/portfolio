@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>Full-Stopped By A Bullet - Waterjetting Metal</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/waterjet.jpg" alt="Waterjetted Metal">
+    <div class="overlay">
+        <p style="margin-left: 20%;margin-right: 20%;">Full-Stopped By A Bullet - Waterjetting Metal</p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+    <p class="epithet"> This was made for a class called EDES 210: Prototyping and Fabrication. </p> 
+    <p class="epithet"> "Let's duel, fair and square!" - Boothill, Honkai Star Rail. </p> 
+    <p class="texthead"> TARGET MARKED [THE DESIGN]</p> 
+    <p class="words"> Scrolling through the past assignments, I saw that one student cut out a batarang. But what good is a throwable without a target? As such, I became inspired to cut out a bulls-eye design. Taking a picture from the internet, I used Adobe Illustrator to trace the image.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lasercutbox1.jpg"alt="The Laser Cut Kerf Tester">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: The Laser Cut Kerf Tester</figcaption>
+    </figure>
+
+Image 1: The Adobe Illustrator file
+I SENSE A STORM... [WATERJET]
+
+With my design, I headed over to my waterjet tutorial. Unfortunately, the ProtoMax was being especially uncooperative. As such, with a bit of messing around with the offsets, I was able to cut out my first piece.
+
+Returning at a different day, I thought cutting my second piece out would be just as simple. I was a fool, for my memory had drifted away like lost sailors at sea. Attempting my first cut, I realized I forgot to reset the position of the nozzle after trying a dry run; the top of my piece ceased to exist. Moreover, it appeared that the waterjet cut an exit line somehow.
+
+Image 2: My first piece [aluminum] in the background as well as my second piece [steel] in the foreground (with its imperfections in view)
+Image 3: My third piece, which failed in a completely separate manner
+
+With this failure in mind, I simply tried again, changing the position of the nozzle. Nevertheless, Poseidon thought it would be funny if water itself hated me today; this cut failed in a completely different way. There wasn't an exit line, to my relief, but there were many more lines created. The inside of my design was completely ruined. With others waiting to use the waterjet, I left with two imperfect creations.
+
+90% CRITICAL HIT RATE [POST PROCESSING]
+
+With my pieces, I first sandblasted one side, as I intended to show that the two diamonds were different materials (given that their backsides were different colors).
+
+Image 4: The new texture the pieces gained after being sandblasted
+
+I then used black spray paint to ...spray paint the diamonds.
+
+Image 5: The pieces after being spray painted
+
+After some food, I returned to complete my creations. Using the laser cutter, I cut out a diamond, allowing me to slot in my diamonds (one at a time), further allowing me to engrave a design on them. Rather, in this case, I was removing some excess spray paint.
+
+Image 6: The cutout I sued to position my diamonds
+Image 7: The result after removing excess spray paint
+
+After some asking around, I decided to spray paint the back as well. Re-sandblasting each piece, I realized the front got some sand on it as well. Thus, after the back spray paint dried, I removed all of the excess spray paint on the front (via laser cutter).
+
+Image 8: The result of removing more excess spray paint via the laser cutter
+FULL STOP TO LIFE [THE DO-OVER]
+
+Still, my pieces were of different materials; they would never be identical. As such, just as a bullet stops life, this project stopped mine; I had to fix my transgressions. New piece cut, I sandblasted both sides and spray painted one. An hour's wait after, a laser removal was in tow. A final coat of paint and another wait later, I was done.
+
+Image 9: My two pieces, stacked on top of each other
+
+
+</body>
+</html>
