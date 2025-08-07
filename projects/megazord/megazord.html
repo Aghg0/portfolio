@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>Megazord Power Up - CAD Model Based on the Megazord's Sword </title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/megazord.png" alt="Crate">
+    <div class="overlay">
+        <p style="text-align: center; margin-left: 20%;margin-right: 20%;">Megazord Power Up - CAD Model Based on the Megazord's Sword  </p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+    <p class="texthead">MIGHTY MORPHIN' POWER RANGERS!!</p> 
+    <p class="words"> For a group project, my group decided to CAD the Megazord from Power Rangers. Evidently, I was assigned the sword.  </p>
+
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="megazord1.png"alt="The Sword From the Mighty Morphin Power Rangers ULTIMATES! Megazord Set">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: The Sword From the Mighty Morphin Power Rangers ULTIMATES! Megazord Set</figcaption>
+    </figure>
+    <p class="words"> From there, I simply used SolidWorks to model the sword, while searching up additional images to add more details to my model. By abusing surfacing tools such as lofts and knits, I was finally able to achieve the shape I wanted.</p>
+    <p class="words"><a style="color: white;" href="sword.SLDPRT" download>Click here to download the SolidWorks model!</a></p>
+
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="megazord2.png"alt="The SolidWorks Model">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 2: The SolidWorks Model</figcaption>
+    </figure>
+
+</body>
+</html>
