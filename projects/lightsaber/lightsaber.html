@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>A New Hope - Combining Casting, Molding, CNCing, and 3D Printing</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/lightsaber.jpg" alt="Crate">
+    <div class="overlay">
+        <p style="text-align: center; margin-left: 20%;margin-right: 20%;">A New Hope - Combining Casting, Molding, CNCing, and 3D Printing </p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+    <p class="epithet"> This was made for a class called EDES 210: Prototyping and Fabrication. <br> I worked on this project with a partner.</p> 
+    <p class="texthead">"DO OR DO NOT. THERE IS NO TRY."</p> 
+    <p class="words"> As we started the final, we still had the preconceived notion of a chess piece in our minds- a relatively cylindrical piece that one could manipulate in their hands. As such, it was inevitable that we started thinking about hilts. More specifically, the hilts from Star Wars. And so, to thingiverse.com we went, scouring the site for an interesting .stl file. Unfortunately, the vast majority of files were made by CaseStudyno8, who incorporated multiple parts in his designs, making them un-CNC able. Luckily, IMakeShips happened to make a model of the LEGO lightsaber hilt, which is what we decided to go with.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber1.png"alt="The Image Provided by IMakeShips of Their Own Model">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: The Image Provided by IMakeShips of Their Own Model</figcaption>
+    </figure>
+    <p class="words"> That being said, I noticed that the hilt had a fundamental issue with it; its center hole would mean it might interfere with the later steps of the project. To remedy this, I imported the .stl file into OnShape, using it as a base to recreate it. Of course, the main difference was that the OnShape model lacked the aforementioned central hole.</p>
+    <p class="words"> <a style="color: white;" target=blank href="https://cad.onshape.com/documents/740e82b5eb0c75ab320c7ce0/w/10f6e54966d7d18394f44da0/e/b3896726f281a41566d7b82d?renderMode=0&uiState=6894e7700aadde5753d0f348">Click here for a link to the Onshape model!</a></p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber2.png"alt="The LEGO Lightsaber Hilt in OnShape">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 2: The LEGO Lightsaber Hilt in OnShape</figcaption>
+    </figure>
+    <p class="words"> Once the new model was 3D-printed, we brought it to class, where its sizing was approved.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber3.jpg"alt="The 3D Printed Model With Correct Scaling">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 3: The 3D Printed Model With Correct Scaling</figcaption>
+    </figure>
+    <p class="texthead">“IN MY EXPERIENCE, THERE’S NO SUCH THING AS LUCK.”</p> 
+    <p class="words"> Next, we used OnShape to essentially cut our model in half before adding a baseplate. On this baseplate, we added 2 0.375'' circles (in diameter) and 2 0.4'' circles (in diameter). The larger circles were extruded outward while the smaller circles were cut inward.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber4.png"alt="The CAD, Now With A Baseplate And Pegs">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 4: The CAD, Now With A Baseplate And Pegs</figcaption>
+    </figure>
+    <p class="words"> In addition, we used OnShape to generate an offset plane 1 cm above the tallest point of our model. Using the Up To Next feature of extrusion, we were able to create another part that represented the silicon we would be pouring in; the volume of this part is exactly the volume of silicon we would need to pour (about 130 cm<sup>3</sup>).</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber5.png"alt="The Second Part And A Display of Its Properties">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 5: The Second Part And A Display of Its Properties</figcaption>
+    </figure>
+    <p class="texthead">“NEVER TELL ME THE ODDS!”</p> 
+    <p class="words"> In class, we hotglued cardboard around our part (including a baseplate) to contain the silicon we would be pouring in. Overhearing our classmates, it appeared as though the density of the silicon was greater than 1 g/cm<sup>3</sup>, thus meaning we would need more than our initial estimate of 130 cm<sup>3</sup> of silicon. Going with a very conservative estimate of 140 g of silicon, we mixed 70 g of Part A with 70 g of Part B and poured the solution into the cardboard box.</p>
+    <p class="words"> Meanwhile, we still needed to CNC out the other half. Following the instructions provided, I gave it my best attempt; I imported the .stl file into VCarve and used the provided tool files to create a roughing as well as a finishing pass. Unfortunately, my attempt ended up as the following image.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber6.jpg"alt="The Initial CNC Attempt">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 6: The Initial CNC Attempt</figcaption>
+    </figure>
+    <p class="words"> In attempting to figure out why the final result wasn't as we had hoped, we looked at other people's files (as they were all saved on the same computer). Interestingly, one of them used the default 1/8'' ball nose tool instead of the class-provided 1/8'' ball nose tool. Perhaps this was the cause. Once we replaced the tool on the finishing pass, two things were evident. The piece was now quite clean, but it would take a much longer time to finish. Perhaps the provided tool simply went too fast and couldn't get a clean finish. Nevertheless, there was still a slight issue on our hands. The toolpaths now created a strange border around the part- was this the result of machining tolerances?</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber7.jpg"alt="The Strange Border That Appeared In VCarve">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 7: The Strange Border That Appeared In VCarve</figcaption>
+    </figure>
+    <p class="words"> We assumed it was, and realized that if the boundary was changed from model to part, we could avoid this issue altogether. With that simple change, the simulation now looked like the following image.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber8.jpg"alt="The Strange Border That Appeared In VCarve">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 8: The Cleaned Simulation</figcaption>
+    </figure>
+    <p class="words"> But still, there was a slight issue. If the toolpath needed to cut the entire top face of the wood, where would the clamps go? In resolving this issue, I peered at past final projects, eventually finding one where the creator carved slots into the wood itself, and so I attempted to replicate it. Grabbing a drill and a 1/4'' bit, I first drilled a series of holes into the face of the wood. After this, I took inspiration from the CNC machines, turning the drill such that the bit could cut into the wood.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber9.jpg"alt="A Picture of One of the Drilled Slots">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 9: A Picture of One of the Drilled Slots</figcaption>
+    </figure>
+    <p class="texthead">“MAY THE FORCE BE WITH YOU.”</p> 
+    <p class="words"> Unfortunately, the slots couldn't hold the wood down; every time the bit entered the wood, it visibly shifted; we needed another method to hold the piece of wood in place. Luckily, my partner developed an interesting method utilizing other clamp types, specifically one that seemed to move laterally when tightened. Using this arrangement, he was able to start a cut, but it was interrupted due to class starting. That being said, however, it appeared the end was in sight regarding the CNC machine.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber10.jpg"alt="The Wood Holding Configuration">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 10: The Wood Holding Configuration</figcaption>
+    </figure>
+    <p class="words"> Hence, we came in one night, aiming to finally move on with the project. Despite my partner securing the wood in the same way, the CNC machine was simply too powerful; the wood flew out of the supports. Given that both of our strategies of securing the wood failed due to the sheer power of the provided tool file, we knew we had to use the default 1/4'' tool file. It took three hours to finish, but it was complete.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber11.jpg"alt="The CNCed Piece">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 11: The CNCed Piece</figcaption>
+    </figure>
+    <p class="words"> The next day, my partner used cardboard to surround the CNCed piece and poured 140g of silicon into it.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber12.jpg"alt="The Cardboard Box With Silicon In It">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 12: The Cardboard Box With Silicon In It</figcaption>
+    </figure>
+    <p class="words"> Once the silicon had set, I removed the surrounding cardboard (and made a subsequent mess).</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber13.jpg"alt="The Mess Needed to Remove the Mold">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 13: The Mess Needed to Remove the Mold</figcaption>
+    </figure>
+    <p class="words"> After my partner arrived, we used the CAD I made to figure out that we needed approximately 25 cm<sup>3</sup> of polyurethane. However, since we wanted to be safe, for our first trial, we mixed 30 cm<sup>3</sup> of polyurethane, along with some green paint. As shown from our first attempt, we didn't rubber band the two silicon halves tightly enough, allowing some of the polyurethane to spill out. Moreover, we figured out that we simply needed more polyurethane, as 30 cm<sup>3</sup> did not fill the mold.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber14.jpg"alt="Our First Attempt, With Polyurethane Leaking Out">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 14: Our First Attempt, With Polyurethane Leaking Out</figcaption>
+    </figure>
+    <p class="words"> That being said, for our next trials, we used 40 cm<sup>3</sup> of polyurethane, which was more than enough to completely fill the mold. And yet, we encountered another issue. It turns out the physical size of the two positives were different; blindly rubberbanding them would result in an unequal deformation of the model; the circular cross-sections would stop being circular and the sections would stop lining up.</p>
+    <p class="words"> After three more unique failures, we figured out a method of rubberbanding that resulted in adequate results. Using four rubber bands, we had two horizontal bands that were each wrapped around the silicon twice, and the block was placed on a popsicle stick such that the block was level.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber15.jpg"alt="An Example of Vertical Shift">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 15: An Example of Vertical Shift</figcaption>
+    </figure>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber16.jpg"alt="An Example of Unequal Deformation">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 16: An Example of Unequal Deformation</figcaption>
+    </figure>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber17.jpg"alt="Another Example of Unequal Deformation">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 17: Another Example of Unequal Deformation</figcaption>
+    </figure>
+    <p class="words"> Since we intentionally overfilled our molds, we needed to sand them down. In addition, our method of rubberbanding, while adequate, did not prevent some polyurethane from spilling out. That is, we needed to use an X-Acto Knife (or something equivalent) to clean up the edges of our pieces. Thus, we decided that I would sand the tops and bottoms of the four pieces and that my partner would finish the pieces off with a clean cut.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber18.jpg"alt="The Sanded Pieces">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 18: The Sanded Pieces</figcaption>
+    </figure>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="lightsaber19.jpg"alt="The Finished Pieces">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 19: The Finished Pieces </figcaption>
+    </figure>
+
+
+</body>
+</html>

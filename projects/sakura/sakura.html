@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>Thousand Cherry Blossoms - CNC'ed Object</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/sakura.jpg" alt="Crate">
+    <div class="overlay">
+        <p style="text-align: center; margin-left: 20%;margin-right: 20%;">Thousand Cherry Blossoms - CNC'ed Object </p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+    <p class="epithet"> This was made for a class called EDES 210: Prototyping and Fabrication.</p> 
+    <p class="epithet"> “Look at the cherry blossoms as they bloom and scatter. Such is the way of life.” – Matsuo Basho</p> 
+    <p class="texthead">SAKURAS THOUSANDFOLD, ENTWINED WITH NIGHT</p> 
+    <p class="words"> As the weather got a lot warmer, I wanted to make an object reminiscent of that fact- the cherry blossom. As such, I went on thenounproject.com in search of the perfect icon. While most of the available images seemed a bit too simple for my liking, I eventually stumbled on the following icon by Eucalyp.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="sakura1.png"alt="The Selected Icon">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: The Selected Icon</figcaption>
+    </figure>
+    <p class="words"> However, I wasn't fond of the inside bits, and so I removed them in the slicing software.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="sakura2.png"alt="The Resulting Flower I Wanted to Cut">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 2: The Resulting Flower I Wanted to Cut</figcaption>
+    </figure>
+    <p class="words"> Setting a few contour and pocket lines that I thought might be interesting, I saved my Carbide Create V8 file and reopened it in Carbide Create V7, allowing me to save that file to be opened in Carbide Create V6. In V6, I was finally able to create the GCode necessary, thus finally allowing me to use Carbide Motion to send my file over to the Shapeoko Pro. With my first attempt, I realized that I set my pockets to be too deep (the OEDK's lights were basically shining through the bottom); I feared for the structural integrity of my actual part.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="sakura3.png"alt="My First Attempt">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 3: My First Attempt</figcaption>
+    </figure>
+    <p class="words"> Thus, after fixing the depths of my pocket cuts, I tried again. Unfortunately, due to the wood and the thickness of the outside walls, some bits inevitably cracked. That being said, I was quite pleased with the overall product.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="sakura4.png"alt="The CNC'ed Parts After Sanding">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 4: The CNC'ed Parts After Sanding</figcaption>
+    </figure>
+    <p class="words"> After sanding it, I stained my pieces with the assistance of a part of a dowel.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="sakura5.png"alt="The Pieces After Staining">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 5: The Pieces After Staining</figcaption>
+    </figure>
+    <p class="words">Although I submitted the piece as is for the class, once I got it back, I knew I wanted to fill it up with pink epoxy. Mixing a 2-part High Gloss Epoxy Resin, I added red and white paint to form a vibrant pink. With this mixture, I filled the holes of my creation. Once the pink resin had dried, I poured a mix of clear resin to the top of my creation.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="sakura6.jpg"alt="A Piece With Resin">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';"> Image 6: A Piece With Resin</figcaption>
+    </figure>
+
+</body>
+</html>
