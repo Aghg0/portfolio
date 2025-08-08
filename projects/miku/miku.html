@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>Miku's Concert - Audio Visualizing Light-Up Acrylic Standee </title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+  <!--
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/sakura.jpg" alt="Crate">
+    <div class="overlay">
+        <p style="text-align: center; margin-left: 20%;margin-right: 20%;">Thousand Cherry Blossoms - CNC'ed Object </p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+-->
+    <p class="epithet"> "To the future we go.” – Hand in Hand by Livetune </p> 
+    <p class="texthead">Senbonzakura</p> 
+    <p class="words">I started this quest with a goal in mind: to make an acrylic stand that had both bottom and back lighting. For the design of my stand, I took a snippet from an official drawing of Sakura Miku and traced it in Adobe Illustrator. </p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="miku1.png"alt="The Traced Icon">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: The Traced Icon</figcaption>
+    </figure>
+    <p class="words">As for the rest of the stand, I knew I needed something to hold LED strips, so I CADed a container for all of my parts. The backlight would be taped behind the acrylic, and the bottom light would have a slot where it could rest.</p>
+    <p class="words"> <a style="color: white;" target=blank href="https://cad.onshape.com/documents/ed47a76c77a2030efc37f564/w/e9dbad9bb9afbecb39fa54e9/e/7cf6596737c2cc896459e21f?renderMode=0&rightPanel=explodedViewPanel&uiState=68961819c4cf87152f68e716">Click here for a link to the Onshape model!</a></p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="miku2.png"alt="The CAD">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 2: The CAD</figcaption>
+    </figure>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="miku3.png"alt="The Exploded View">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 3: The Exploded View</figcaption>
+    </figure>
+    <p class="words">With a prototype of my design in mind, I then set off to use the laser cutter to engrave the aforementioned design onto a piece of pink acrylic before cutting it into the shape I needed. With this piece of acrylic, I used the LED strips to find a color that would shine through the best.</p>
+    <figure>
+        <video style="display: block; margin:auto;width:500px" controls>
+            <source src="miku4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Video 1: Seeing How Colors Would Show Through the Acrylic</figcaption>
+    </figure>
+    <p class="words">Some simple wiring and soldering later, I was finally able to assemble the first version of the Miku box.</p>
+    <figure>
+        <video style="display: block; margin:auto;width:500px" controls>
+            <source src="miku5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Video 2: Miku Box Version 1</figcaption>
+    </figure>
+    <p class="words">And yet, this was quite boring. It was rainbow and all, but there wasn't really any user interaction. As such, I changed that. In the new version, there's a user interface where you can input a Youtube link and a name for it. Python code will then take that name, search it up, and use the source file of the first image it finds to get its average color.</p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="miku6.png"alt="The New User Interface">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 5: The New User Interface</figcaption>
+    </figure>
+    <p class="words">The code will also progress through the song, finding the dominant frequency in order to determine what color the RGB lights should show, with the center of the color range being the average color from earlier. More specifically, the code writes to two text files (one represents the harmony, and the other represents the percussion) so that when a given song plays, these text files are written to an Arduino, which changes the color of 2 LED strips. Due to my bad code, however, everything needs to be in a folder called New Folder (3) (oops).</p>
+    <p class="words"><a style="color: white;" href="New folder (3).zip" download>Click here to download the code! (display.py is the main file, miku_standard.ino is the rainbow version, miku_run.ino is the audio visualization version)</a></p>
+    <figure>
+        <video style="display: block; margin:auto;width:500px" controls>
+            <source src="miku7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Video 3: How The User Interface Works </figcaption>
+    </figure>
+    <figure>
+        <video style="display: block; margin:auto;width:500px" controls>
+            <source src="miku8.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>         
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Video 4: An Example of the Audio Visualization </figcaption>
+    </figure>
+    <p class="words">This project is still being worked on, so please hold on for more updates.</p>
+
+</body>
+</html>
+
