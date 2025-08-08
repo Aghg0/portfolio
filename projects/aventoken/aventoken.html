@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author = "Kyle Li">
+    <title>All In - Aventurine's Token </title>
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <style>
+        body {   
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50% auto;
+        background-color: #0c0c13;
+        }
+
+        .name{
+            font-family:'Space Grotesk';
+            float: left;
+            font-size: 18px;
+            margin: 1%;
+            color:#5194d0;
+        }
+
+        .menucontainer{font-family:'Space Grotesk';
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .menuitem{
+            width:auto;
+            font-family:'Space Grotesk';
+            margin: 1%;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            color:white;
+        }
+        .menuitem a:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menuitem a:visited {
+            color: #305d85;
+        }
+
+        .menuitem a:hover {
+            color: #5194d0;
+        }
+
+        .menuitem a:active {
+            color: #305d85;
+        }
+
+        .overlay{
+            display:flex;
+            justify-content:center;
+            font-size:45px;
+            font-family:'Space Grotesk';
+            font-weight:bold;
+            color:white;
+            background-color: rgba(0,0,0,0.5); 
+            width: 100%;
+            bottom: 0%;
+            position: absolute; 
+            
+        }
+    
+        .words{
+            color: white;
+            font-size:20px;
+            font-family:'Space Grotesk';
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        .epithet{
+            margin-left: 20%;
+            margin-right: 20%; 
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+            margin-bottom: 50px
+        }
+
+        .texthead{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-weight:bold;
+            text-align: center;
+            color: white;
+            font-size:24px;
+            font-family:'Space Grotesk';
+        }
+
+        @media screen and (max-width: 700px) {
+            #head{
+                display: none
+            }
+        }
+        @media screen and (max-width: 800px) {
+            .menucontainer{
+                width: 100%;
+                transform: rotate(180deg);
+            }
+
+            .menuitem {
+                transform: rotate(-180deg);
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+    </style> 
+</head>
+<body>
+
+    <script>
+        function contact(){
+            document.getElementById("contact").style.color = "#305d85";
+        }
+        function contacthover(){
+            document.getElementById("contact").style.color = "#5194d0";
+        }
+    </script>
+
+
+    <div class="name">Kyle Li</div>
+    <ul class="menucontainer">
+        <li class="menuitem"> <a id = "contact" onhover ="contacthover()" onclick="contact()" href="mailto:kyle81106@gmail.com?subject=Contacted%20from%20website">Contact</a></li>
+        <li class="menuitem"> <a href="../../Kyle Li - Resume.pdf" target="_blank">Résumé</a></li>
+        <li class="menuitem"> <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kyle-li-628531231/">LinkedIn</a></li>
+        <li class="menuitem"> <a href="../../projects.html">Projects</a></li>
+        <li class="menuitem"> <a href="../../about.html">About</a></li>
+        <li class="menuitem"> <a href="../../index.html">Home</a></li>
+    </ul>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-bottom: 20px;">
+    <div style="width: 100%; height:500px; display: flex;align-items: center;position: relative">
+    <img style="object-fit: cover;width: 100%;height:500px;" src="../../images/aventoken.JPG" alt="Crate">
+    <div class="overlay">
+        <p style="text-align: center; margin-left: 20%;margin-right: 20%;">All In - Aventurine's Token </p>
+    </div>
+    </div>
+    <hr style="clear: both; height: 2px; background-color: #305d85; border: none;margin-top:20px;margin-bottom: 20px;">
+    <p class="epithet"> "Bust? Or maybe I'll take it all!" - Aventurine, Honkai Star Rail</p> 
+    <p class="texthead">"HIGH STAKES, HIGH REWARDS"</p> 
+    <p class="words"> As a gift for a friend, I decided to 3D-print Aventurine's token. Unfortunately, there was a slight problem. I didn't have a model to 3D-print and I didn't feel like spending a couple of dollars for someone else's model; I wanted to make it myself.</p>
+
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="aventoken1.png"alt="The Token in Question">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 1: The Token in Question</figcaption>
+    </figure>
+    <p class="words"> And yet, as one can plainly see, the token was slanted; I couldn't possibly use it to model my coin. So instead, I rceorded in-game videos of Honkai Star Rail and took screenshots whenever the token appeared.</p>
+    
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="aventoken2.png"alt="An Example of the Screenshots">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 2: An Example of the Screenshots</figcaption>
+    </figure>
+    <p class="words"> It is with these screenshots that I was able to use OnShape to model a side of the token. </p>
+
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="aventoken3.png"alt="One Side">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 3: One Side</figcaption>
+    </figure>
+
+    <p class="words"> But still, I realized that in order to connect a top and bottom, there had to be something to align the two halves, which is why I implemented the following feature. </p>
+
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="aventoken4.png"alt="The Allignment Feature">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 4: The Allignment Feature</figcaption>
+    </figure>
+
+    <p class="words"> With the two halves 3D-printed, I superglued them together and sanded down the edge of the coin.  </p> 
+    <p class="words"> <a style="color: white;" target=blank href="https://cad.onshape.com/documents/68cae1c153a8f1044e0ee9aa/w/26ee0ce0225f7849c730a648/e/68ed3bef218ebafbf35092c5?renderMode=0&uiState=68953dd21c08f961f62e066d">Click here for a link to the Onshape model!</a></p>
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="aventoken5.jpg"alt="The Final Result">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 5: The Final Result</figcaption>
+    </figure>
+    <p class="words"> And yet, I wanted to do more with the coin. More specifically, I wanted to replicate Aventurine's follow up attack. In addition, I thought it would be funny if it could also be used as an alarm clock, with the coin falling at a specified time.</p> 
+    <figure>
+        <img style="display: block; margin:auto;width:300px" src="aventoken6.png"alt="Aventurine's Follow Up Attack">
+        <figcaption style="text-align: center; color: white;font-size:16px;font-family:'Space Grotesk';">Image 5: Aventurine's Follow Up Attack</figcaption>
+    </figure>
+    <p class="words"> As a result, I coded a simple Python and Arduino program that actuates servo motors when "All in" or "Watch your head" is said. Furthermore, there is an alarm mode that will also actuate the servos daily at a specified time. Of course, one can switch between the modes by saying/typing "switch" depending on the mode.</p> 
+    <p class="words"><a style="color: white;" href="Aventurine.zip" download>Click here to download the code!</a></p>
+    <p class="words"> For my next steps, I'd like to 3D-print a housing for the coin, servo motors, and some gears that are yet to be modeled.</p> 
+</body>
+</html>
